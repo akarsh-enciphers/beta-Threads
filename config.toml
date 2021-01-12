@@ -59,6 +59,12 @@ paginate = 10
     weight = 6
     identifier = "new"
     url = "/new/"
+  [[menu.main]]
+    name = "Contributors"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 7
+    identifier = "Contributors"
+    url = "/Contributors/"
 
 [social]
   # Link your social networking accouns to the side menu
