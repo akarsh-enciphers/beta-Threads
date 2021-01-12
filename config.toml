@@ -51,8 +51,7 @@ paginate = 10
     name = "Solutions"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 5
-    identifier = "solution"
-    url = "/solution/"
+    url = "https://akarsh-enciphers.github.io/solution/"
   [[menu.main]]
     name = "Upcoming Features"
     pre = "<i class='fa fa-list fa-fw'></i>"
