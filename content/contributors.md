@@ -11,7 +11,7 @@ Here is the list of all contributors related to this project
 
 1. [Abhinav Mishra](https://twitter.com/0ctac0der)
 
-2. [Narendra Kumar Sharma](https://twitter.com/0ddhawk)
+2. [Narendra Kumar](https://twitter.com/0ddhawk)
 
 3. [Shivam Goyal](https://twitter.com/g33kyshivam)
 
