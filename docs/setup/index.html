@@ -228,57 +228,63 @@
 <h3 id="part-1prerequisite-for-setting-up-lab">Part-1:(Prerequisite for setting up lab)</h3>
 <p>There are only two prerequisite:</p>
 <ol>
-<li>Install <strong>Node.js</strong> in your system.</li>
+<li>
+<p>Install <strong>Node.js</strong> in your system.</p>
+</li>
+<li>
+<p>Install <strong>MongoDB</strong>.</p>
+</li>
 </ol>
 <p><strong>Note</strong>: Check with commands ($npm -v and $node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.</p>
-<ol start="2">
-<li>Install <strong>MongoDB</strong>.</li>
-</ol>
 <h3 id="nodejs-setup">Node.js Setup</h3>
 <ol>
 <li>
 <p>Go to your terminal.</p>
 </li>
 <li>
-<p>$ sudo apt update</p>
+<p><code>$ sudo apt update</code></p>
 </li>
 <li>
-<p>$ cd ~</p>
+<p><code>$ cd ~</code></p>
 </li>
 <li>
 <p><code>$ curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh</code></p>
 </li>
 <li>
-<p>$ sudo bash nodesource_setup.sh</p>
+<p><code>$ sudo bash nodesource_setup.sh</code></p>
 </li>
 <li>
-<p>$ sudo apt install nodejs</p>
+<p><code>$ sudo apt install nodejs</code></p>
 </li>
 <li>
 <p>Check the version after above commands with:</p>
-<p>a. $ node -v</p>
-<p>b.$ npm -v</p>
+<p>a. <code>$ node -v</code></p>
+<p>b. <code>$ npm -v</code></p>
 </li>
 </ol>
 <h3 id="mongodb-setup">MongoDB setup</h3>
 <ol>
-<li>Open up your terminal</li>
-</ol>
-<p>2.<code>$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</code></p>
-<p>3.<code>$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'</code></p>
-<ol start="4">
 <li>
-<p>$ sudo apt-get update</p>
+<p>Open up your terminal</p>
 </li>
 <li>
-<p>$ sudo apt install mongodb-org</p>
+<p><code>$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</code></p>
 </li>
 <li>
-<p>$ sudo systemctl enable &ndash;now mongod</p>
+<p><code>$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'</code></p>
+</li>
+<li>
+<p><code>$ sudo apt-get update</code></p>
+</li>
+<li>
+<p><code>$ sudo apt install mongodb-org</code></p>
+</li>
+<li>
+<p><code>$ sudo systemctl enable --now mongod</code></p>
 </li>
 <li>
 <p>To check if the MongoDb was installed successfully use this command:</p>
-<p>$ mongo &ndash;eval &lsquo;db.runCommand({ connectionStatus: 1 })&rsquo;</p>
+<p><code>$ mongo --eval 'db.runCommand({ connectionStatus: 1 })'</code></p>
 </li>
 <li>
 <p>You must get a output like this or similar to this after the above command which means MongoDB was installed properly.</p>
@@ -308,9 +314,9 @@ MongoDB server version: 4.4.0
 </li>
 <li>
 <p>Then use these commands to run the application server on your localhost:</p>
-<p>a. $ cd enciphers_web-master</p>
-<p>b. $ npm install</p>
-<p>c. $ npm start</p>
+<p>a. <code>$ cd enciphers_web-master</code></p>
+<p>b. <code>$ npm install</code></p>
+<p>c. <code>$ npm start</code></p>
 </li>
 <li>
 <p>After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.</p>
@@ -321,17 +327,11 @@ MongoDB server version: 4.4.0
 &gt; nodemon server.js
 
 [nodemon] 2.0.4 
-
 [nodemon] to restart at any time, enter `rs`
-
 [nodemon] watching path(s): *.*
-
 [nodemon] watching extensions: js,mjs,json
-
 [nodemon] starting `node server.js`
-
 Connected to Database :: MongoDB
-
 Connected to Moongose
 </code></pre><ol start="6">
 <li>As the Threads application is running on port no. 3000 in you localhost. So go to your browser and vist <a href="http://localhost:3000/home">http://localhost:3000/home</a></li>

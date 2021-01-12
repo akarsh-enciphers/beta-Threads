@@ -15,47 +15,47 @@ There are only two prerequisite:
 
 1. Install **Node.js** in your system.
 
-**Note**: Check with commands ($npm -v and $node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.
-
 2. Install **MongoDB**.
+
+**Note**: Check with commands ($npm -v and $node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.
 
 ### Node.js Setup
 
 1. Go to your terminal.
 
-2. $ sudo apt update
+2. `$ sudo apt update`
 
-3. $ cd ~
+3. `$ cd ~`
 
 4. `$ curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`
 
-5. $ sudo bash nodesource_setup.sh
+5. `$ sudo bash nodesource_setup.sh`
 
-6. $ sudo apt install nodejs
+6. `$ sudo apt install nodejs`
 
 7. Check the version after above commands with:
    
-   a. $ node -v
+   a. `$ node -v`
    
-   b.$ npm -v
+   b. `$ npm -v`
 
 ### MongoDB setup
 
 1. Open up your terminal 
 
-2.`$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
+2. `$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
 
-3.`$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'`
+3. `$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'`
 
-4. $ sudo apt-get update
+4. `$ sudo apt-get update`
 
-5. $ sudo apt install mongodb-org
+5. `$ sudo apt install mongodb-org`
 
-6. $ sudo systemctl enable --now mongod
+6. `$ sudo systemctl enable --now mongod`
 
 7. To check if the MongoDb was installed successfully use this command:
 
-   $ mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+   `$ mongo --eval 'db.runCommand({ connectionStatus: 1 })'`
 
 8. You must get a output like this or similar to this after the above command which means MongoDB was installed properly.
 
@@ -84,11 +84,11 @@ MongoDB server version: 4.4.0
 
 4. Then use these commands to run the application server on your localhost:
 
-    a. $ cd enciphers_web-master
+    a. `$ cd enciphers_web-master`
 
-    b. $ npm install
+    b. `$ npm install`
 
-    c. $ npm start
+    c. `$ npm start`
 
 5. After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.
  
@@ -98,17 +98,11 @@ MongoDB server version: 4.4.0
 > nodemon server.js
 
 [nodemon] 2.0.4 
-
 [nodemon] to restart at any time, enter `rs`
-
 [nodemon] watching path(s): *.*
-
 [nodemon] watching extensions: js,mjs,json
-
 [nodemon] starting `node server.js`
-
 Connected to Database :: MongoDB
-
 Connected to Moongose
 ```
 
