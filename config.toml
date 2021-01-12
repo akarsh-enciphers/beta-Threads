@@ -58,7 +58,7 @@ paginate = 10
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 6
     identifier = "new"
-    url = "/new/"
+    url = "/upcoming/"
   [[menu.main]]
     name = "Contributors"
     pre = "<i class='fa fa-list fa-fw'></i>"
