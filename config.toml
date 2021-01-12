@@ -34,8 +34,8 @@ paginate = 10
     name = "Setup"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 3
-    identifier = "post"
-    url = "/post/"
+    identifier = "setup"
+    url = "/setup/"
 [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-list fa-fw'></i>"
@@ -46,7 +46,7 @@ paginate = 10
     name = "Challenges"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 4
-    url = "/contact/"
+    url = "/challenges/"
   [[menu.main]]
     name = "Solutions"
     pre = "<i class='fa fa-list fa-fw'></i>"
@@ -64,7 +64,7 @@ paginate = 10
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 7
     identifier = "Contributors"
-    url = "/Contributors/"
+    url = "/contributors/"
 
 [social]
   # Link your social networking accouns to the side menu

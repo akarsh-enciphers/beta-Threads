@@ -19,10 +19,10 @@ This web application comes up with various web application vulnerabilities just 
     
     <item>
       <title>Challenges</title>
-      <link>https://akarsh-enciphers.github.io/beta-Threads/contact/</link>
+      <link>https://akarsh-enciphers.github.io/beta-Threads/challenges/</link>
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://akarsh-enciphers.github.io/beta-Threads/contact/</guid>
+      <guid>https://akarsh-enciphers.github.io/beta-Threads/challenges/</guid>
       <description>As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of these vulnerabilities are the challenges on Threads application. We have categorized the vulnerabilities into 4 parts (low,medium,high,critical) on the basis of how it is going to affect your system.
 Note : ( In order to solve the challenges hints are provided with them).
 Here is the list of all the challenges according to the severity category to solve and practise:</description>
