@@ -45,6 +45,15 @@ Here is the list of all contributors related to this project
     </item>
     
     <item>
+      <title>Setting-up Threads</title>
+      <link>https://akarsh-enciphers.github.io/beta-Threads/setup/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://akarsh-enciphers.github.io/beta-Threads/setup/</guid>
+      <description>As we know Threads is a vulnerable lab application which looks the same like any other social media platform but the main motto is to solve the vulnerabilities present in it. So here is a guide on how to setup Threads application on your local system which is divided into two parts, one contains the information on how to install the prerequisite before setting up the lab and the other part contains on how to setup lab if you already have the both prerequisite installed in your system.</description>
+    </item>
+    
+    <item>
       <title>Solutions</title>
       <link>https://akarsh-enciphers.github.io/beta-Threads/solution/</link>
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>

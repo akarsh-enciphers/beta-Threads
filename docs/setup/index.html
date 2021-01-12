@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A vulnerable web application developed by Enciphers">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  <title>Setting-up Threads &middot;  Threads</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://akarsh-enciphers.github.io/beta-Threads/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://akarsh-enciphers.github.io/beta-Threads/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://akarsh-enciphers.github.io/beta-Threads/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://akarsh-enciphers.github.io/beta-Threads/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://akarsh-enciphers.github.io/beta-Threads/">Threads</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/about/"><i class='fa fa-list fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/setup/"><i class='fa fa-list fa-fw'></i>Setup</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/challenges/"><i class='fa fa-list fa-fw'></i>Challenges</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/solution/"><i class='fa fa-list fa-fw'></i>Solutions</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/upcoming/"><i class='fa fa-list fa-fw'></i>Upcoming Features</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://akarsh-enciphers.github.io/beta-Threads/contributors/"><i class='fa fa-list fa-fw'></i>Contributors</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+ 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/https://github.com/enciphers/Threads" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2020. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Setting-up Threads</h1>
+  <h2>A vulnerable web application developed by Enciphers</h2>
+</div>
+<div class="content">
+  <p>As we know Threads is a vulnerable lab application which looks the  same like any other social media platform but the main motto is to solve the vulnerabilities present in it. So here is a guide on how to setup Threads application on your local system which is divided into two parts, one contains the information on how to install the  prerequisite before setting up the lab and the other part contains on how to setup lab if you already have the both prerequisite installed in your system.</p>
+<h2 id="how-to-setup-threads-on-your-local-system">How to setup Threads on your local system</h2>
+<h3 id="part-1prerequisite-for-setting-up-lab">Part-1:(Prerequisite for setting up lab)</h3>
+<p>There are only two prerequisite:</p>
+<ol>
+<li>
+<p>Install <strong>Node.js</strong> in your system<!-- raw HTML omitted -->
+<strong>Note</strong>: Check with commands ($npm -v and $node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.</p>
+</li>
+<li>
+<p>Install <strong>MongoDB</strong>.</p>
+</li>
+</ol>
+<h3 id="nodejs-setup">Node.js Setup</h3>
+<ol>
+<li>
+<p>Go to your terminal.</p>
+</li>
+<li>
+<p>$ sudo apt update</p>
+</li>
+<li>
+<p>$ cd ~</p>
+</li>
+<li>
+<p>$ curl -sL <a href="https://deb.nodesource.com/setup_14.x">https://deb.nodesource.com/setup_14.x</a> -o nodesource_setup.sh</p>
+</li>
+<li>
+<p>$ sudo bash nodesource_setup.sh</p>
+</li>
+<li>
+<p>$ sudo apt install nodejs</p>
+</li>
+<li>
+<p>Check the version after above commands with:
+a. $ node -v, b.$ npm -v</p>
+</li>
+</ol>
+<h3 id="mongodb-setup">MongoDB setup</h3>
+<ol>
+<li>
+<p>Open up your terminal</p>
+</li>
+<li>
+<p>$ wget -qO - <a href="https://www.mongodb.org/static/pgp/server-4.4.asc">https://www.mongodb.org/static/pgp/server-4.4.asc</a> | sudo apt-key add -</p>
+</li>
+<li>
+<p>$ sudo add-apt-repository &lsquo;deb [arch=amd64] <a href="https://repo.mongodb.org/apt/ubuntu">https://repo.mongodb.org/apt/ubuntu</a> focal/mongodb-org/4.4 multiverse&rsquo;</p>
+</li>
+<li>
+<p>$ sudo apt-get update</p>
+</li>
+<li>
+<p>$ sudo apt install mongodb-org</p>
+</li>
+<li>
+<p>$ sudo systemctl enable &ndash;now mongod</p>
+</li>
+<li>
+<p>To check if the MongoDb was installed successfully use this command:  $ mongo &ndash;eval &lsquo;db.runCommand({ connectionStatus: 1 })&rsquo;</p>
+</li>
+<li>
+<p>You must get a output like this or similar to this after the above command which means MongoDB was installed properly.</p>
+</li>
+</ol>
+<pre><code>MongoDB shell version v4.4.0 
+
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&amp;gssapiServiceName=mongodb 
+
+Implicit session: session { &quot;id&quot; : UUID(&quot;2af3ab0e-2197-4152-8bd0-e33efffe1464&quot;) } 
+
+MongoDB server version: 4.4.0 
+
+{ 
+
+  &quot;authInfo&quot; : {
+ 
+    &quot;authenticatedUsers&quot; : [ ],
+ 
+    &quot;authenticatedUserRoles&quot; : [ ] 
+
+  }, 
+
+  &quot;ok&quot; : 1
+ 
+}
+</code></pre><h3 id="part-2setting-up-threads-app">Part-2:(Setting up Threads app)</h3>
+<ol>
+<li>
+<p>First download the <a href="https://github.com/enciphers/Threads">Threads application</a>.</p>
+</li>
+<li>
+<p>Open up  your terminal and go to the folder where the zip file got downloaded.</p>
+</li>
+<li>
+<p>Unzip the downloaded zip file for Threads application.</p>
+</li>
+<li>
+<p>Then use these commands to run the application server on your localhost:</p>
+<p>a. $ cd enciphers_web-master</p>
+<p>b. $ npm install</p>
+<p>c.&gt;$ npm start</p>
+</li>
+<li>
+<p>After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.</p>
+</li>
+</ol>
+<pre><code>&gt; vulnerable_app@1.0.0 start /root/Downloads/enciphers_web-master
+
+&gt; nodemon server.js
+
+[nodemon] 2.0.4 
+
+[nodemon] to restart at any time, enter `rs`
+
+[nodemon] watching path(s): *.*
+
+[nodemon] watching extensions: js,mjs,json
+
+[nodemon] starting `node server.js`
+
+Connected to Database :: MongoDB
+
+Connected to Moongose
+</code></pre><ol start="6">
+<li>As the Threads application is running on port no. 3000 in you localhost. So go to your browser and vist <a href="http://localhost:3000/home">http://localhost:3000/home</a></li>
+</ol>
+<p>The best way to learn something is to play with it.</p>
+
+</div>
+
+</div>
+</div>
+<script src="https://akarsh-enciphers.github.io/beta-Threads/js/ui.js"></script>
+<script src="https://akarsh-enciphers.github.io/beta-Threads/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+<script src="https://akarsh-enciphers.github.io/beta-Threads/js/math-code.js"></script>
+  <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+</body>
+</html>
+
