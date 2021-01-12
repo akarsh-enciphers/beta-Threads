@@ -13,7 +13,8 @@ As we know Threads is a vulnerable lab application which looks the  same like an
 
 There are only two prerequisite:
 
-1. Install **Node.js** in your system<br>
+1. Install **Node.js** in your system.
+
 **Note**: Check with commands ($npm -v and $node -v) if the node is already installed then it’s not necessary to follow the node.js installation setup below.
 
 2. Install **MongoDB**.
@@ -26,22 +27,25 @@ There are only two prerequisite:
 
 3. $ cd ~
 
-4. $ curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+4. `$ curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh`
 
 5. $ sudo bash nodesource_setup.sh
 
 6. $ sudo apt install nodejs
 
 7. Check the version after above commands with:
-    a. $ node -v, b.$ npm -v
+   
+   a. $ node -v
+   
+   b.$ npm -v
 
 ### MongoDB setup
 
 1. Open up your terminal 
 
-2. $ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+2.`$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
 
-3. $ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+3.`$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'`
 
 4. $ sudo apt-get update
 
@@ -49,31 +53,23 @@ There are only two prerequisite:
 
 6. $ sudo systemctl enable --now mongod
 
-7. To check if the MongoDb was installed successfully use this command:  $ mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+7. To check if the MongoDb was installed successfully use this command:
+
+   $ mongo --eval 'db.runCommand({ connectionStatus: 1 })'
 
 8. You must get a output like this or similar to this after the above command which means MongoDB was installed properly.
 
 ```
 MongoDB shell version v4.4.0 
-
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb 
-
 Implicit session: session { "id" : UUID("2af3ab0e-2197-4152-8bd0-e33efffe1464") } 
-
 MongoDB server version: 4.4.0 
-
 { 
-
   "authInfo" : {
- 
     "authenticatedUsers" : [ ],
- 
     "authenticatedUserRoles" : [ ] 
-
   }, 
-
   "ok" : 1
- 
 }
 ```
 
@@ -92,7 +88,7 @@ MongoDB server version: 4.4.0
 
     b. $ npm install
 
-    c.>$ npm start
+    c. $ npm start
 
 5. After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.
  
@@ -120,4 +116,4 @@ Connected to Moongose
 
 
 
-The best way to learn something is to play with it.
+#### The best way to learn something is to play with it.
