@@ -7,7 +7,7 @@ description = "A vulnerable web application developed by Enciphers"
 
 As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of  these vulnerabilities are the challenges on Threads application. We have categorized the vulnerabilities into 4 parts (low,medium,high,critical) on the basis of how it is going to affect your system.
 
-** Note**: ( In order to solve the challenges hints are provided with them).
+**Note** : ( In order to solve the challenges hints are provided with them).
    
 Here is the list of all the challenges according to the severity category to solve and practise:
 
@@ -16,8 +16,7 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### Self XSS
 
-**About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to reflected xss however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like csrf.
- [Tap to learn more](https://portswigger.net/web-security/cross-site-scripting/reflected) 
+**About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to reflected xss however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF. [Reference to Learn more](https://portswigger.net/web-security/cross-site-scripting/reflected) 
 
 **Hint**: Self-XSS is present in the profile section of the application. You need to insert a javascript payload to exploit this vulnerability. 
 
@@ -30,7 +29,7 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### Cross-site Request Forgery(CSRF)
 
-**About**: In this victim executes unwanted actions on behalf of the attacker on an application in which they are authenticated. [CSRF](https://owasp.org/www-community/attacks/csrf) can be done at the places in an application where state change events happen like password change,delete,update and similar. Attackers can trick a victim to click on a link via social engineering and execute the unwanted actions on a web application. [Tap to learn more](https://owasp.org/www-community/attacks/csrf).
+**About**: In this victim executes unwanted actions on behalf of the attacker on an application in which they are authenticated. [CSRF](https://owasp.org/www-community/attacks/csrf) can be done at the places in an application where state change events happen like password change,delete,update and similar. Attackers can trick a victim to click on a link via social engineering and execute the unwanted actions on a web application. [Reference to Learn more](https://owasp.org/www-community/attacks/csrf).
 
 **Hint**: Can you try to change user password,username on profile using CSRF.
 
@@ -39,7 +38,7 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### MongoDB Injection(NoSQL Injection)
 
-**About**: NoSQL injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB. NoSQL injection attacks can be especially dangerous because code is injected and executed on the server in the language of the web application, potentially allowing arbitrary code execution.  [Tap to learn more](https://www.netsparker.com/blog/web-security/what-is-nosql-injection/)
+**About**: [NoSQL](https://www.netsparker.com/blog/web-security/what-is-nosql-injection/) injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB. NoSQL injection attacks can be especially dangerous because code is injected and executed on the server in the language of the web application, potentially allowing arbitrary code execution.  [Reference to learn more](https://www.netsparker.com/blog/web-security/what-is-nosql-injection/)
 
 **Hint** : It is present in a section where the application retrieve values from the database according to the user input like in fields like search bar.
 
@@ -48,19 +47,19 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### Insecure Direct Object Reference
 
-**About**: An insecure direct object reference [(IDOR)](https://portswigger.net/web-security/access-control/idor) is an access control vulnerability. Which occurs when unvalidated input is used to reference or access an object by using an unique ID. If by changing ID the attacker can access the details/object which should not be accessible, it's an IDOR. [Click to learn more](https://portswigger.net/web-security/access-control/idor)
+**About**: An insecure direct object reference [(IDOR)](https://portswigger.net/web-security/access-control/idor) is an access control vulnerability. Which occurs when unvalidated input is used to reference or access an object by using an unique ID. If by changing ID the attacker can access the details/object which should not be accessible, it's an IDOR. [Reference to learn more](https://portswigger.net/web-security/access-control/idor)
 
 **Hint**:  Deleting Comment/Post of any user using BurpSuite (having the UUID).
 
 ### Server-side Request Forgery(SSRF)
 
-**About**: In a Server-Side Request Forgery [(SSRF)](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery) victim server makes the http request on the behalf of the attacker to some other mentioned server by the attacker. [Click to learn more](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
+**About**: In a Server-Side Request Forgery [(SSRF)](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery) victim server makes the http request on the behalf of the attacker to some other mentioned server by the attacker. [Reference to learn more](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
 
 **Hint**: It is present in the profile section of the application where an user can upload picture via URL.
 
-### Attribute-XSS(Stored XSS)
+### XSS(Stored XSS)
 
-**About**: [Stored xss](https://portswigger.net/web-security/cross-site-scripting/stored) occurs when the application processes and stores untrusted data (malicious javascript) at the server side and includes that data in later http response in a unsafe way which can triggers the malicious javascript as input to application. [Click to learn more](https://portswigger.net/web-security/cross-site-scripting/stored) 
+**About**: [Stored xss](https://portswigger.net/web-security/cross-site-scripting/stored) occurs when the application processes and stores untrusted data (malicious javascript) at the server side and includes that data in later http response in a unsafe way which can triggers the malicious javascript as input to application. [Reference to learn more](https://portswigger.net/web-security/cross-site-scripting/stored) 
 
 **Hint**:  Under the profile section, you can change your website link, it would execute only when visited in an unauthenticated state.
 
