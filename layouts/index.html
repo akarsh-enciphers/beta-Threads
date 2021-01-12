@@ -1,0 +1,59 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>Threads</h1>
+  <h2>A vulnerable web application developed by Enciphers</h2>
+</div>
+
+
+<div class="content">
+<h2>About</h2>
+<ul style="text-align:centre;">
+<li>It is a Vulnerable Web Application build in Node.js for learning and practicing web application security. It is like a social media platform where people can connect with each other.</li>
+<li> EJS is used as a frontend development templating engine with bootstrap and a  mix  of  a  simple  HTML, CSS is used to build this vulnerable web application. </li>
+<li>Express libraries which are used are 
+<ol>
+<li>Multer (file upload both with s3 bucket and disk storage).</li>
+<li>Passport.js (for cookie-based authentication and JWT authentication).</li>
+</ol> </li>
+<li>Basically this application contains various vulnerabilities as challenges for you to solve. </li>
+</ul>
+<h2>How to Install</h2>
+<ul style="text-align:centre;">
+<li>Download: <a href="https://github.com/enciphers/Threads">Click here</a></li>
+<li>Go to side bar menu "Setup" tab to see how to configure the Threads application in your local system.</li>
+</ul>
+<h2>Features</h2>
+This is like a social media application so it consist some of the similar features like:
+<ul style="text-align:centre;">
+<li>A user can sign up and login into this application.</li>
+<li>A user can create posts, he/she can also add images to the post he/she creates.</li>
+<li>A user can like and can comment on other users posts.</li>
+<li>A user can also chat with other users.</li>
+<li>A user can tag as many users he want to tag in his post.</li>
+</ul>
+<h2> All Challenges</h2>
+<p>Threads web application consist of various vulnerabilities with different levels of severity like Low, Medium, High & critical. Vulnerabilities are mentioned  according to  their category below 
+</p>
+<h4>Low</h4>
+<ul>
+<li>Self XSS</li>
+<li>CSRF(Cross-site Request Forgery)</li>
+<li>Hidden directories</li>
+</ul>
+<h4>Medium</h4>
+<ul>
+<li>MongoDB Injection</li>
+</ul>
+<h4>High</h4>
+<ul>
+<li>IDOR(Insecure Direct Object Reference)</li>
+<li>Stored XSS</li>
+<li>SSRF(Server-side Request Forgery)</li>
+</ul>
+<h4>Critical</h4>
+<ul>
+<li>JWT Authentication</li>
+</ul>
+</div>
+{{ partial "footer.html" . }}
