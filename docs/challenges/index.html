@@ -229,14 +229,14 @@
 <h2 id="low">Low</h2>
 <h3 id="xssself-xss">XSS(Self-XSS)</h3>
 <p><strong>About</strong>: <a href="https://portswigger.net/web-security/cross-site-scripting/reflected">Self-xss</a> has the behaviour similar to Reflected XSS however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF.</p>
-<p>Reference to Learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/reflected">Self-XSS</a></p>
+<p>Reference to Learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/reflected">Self-Cross Site Scripting</a></p>
 <p><strong>Hint</strong>: Self-XSS is present in the profile section of the application. You need to insert a javascript payload to exploit this vulnerability.</p>
 <h3 id="hidden-directories">Hidden Directories</h3>
 <p><strong>About</strong>: Sometimes Application has hidden directories which are not visible on a public website and these can reveal useful information for potential attacks. Hidden Directories can be found via brute force using a wordlist.</p>
 <p><strong>Hint</strong>: There are many hidden directories present in Threads application one consist of an admin section where an admin user can login. You can find the hidden directories with the help of following tools like DIRSEARCH, FUZZ dir etc.</p>
 <h3 id="cross-site-request-forgerycsrf">Cross-site Request Forgery(CSRF)</h3>
 <p><strong>About</strong>: In this victim executes unwanted actions on behalf of the attacker on an application in which they are authenticated. <a href="https://owasp.org/www-community/attacks/csrf">CSRF</a> can be done at the places in an application where state change events happen like password change,delete,update and similar. Attackers can trick a victim to click on a link via social engineering and execute the unwanted actions on a web application.</p>
-<p>Reference to Learn more:<a href="https://owasp.org/www-community/attacks/csrf">CSRF</a>.</p>
+<p>Reference to Learn more:<a href="https://owasp.org/www-community/attacks/csrf">Cross-site Request Forgery</a>.</p>
 <p><strong>Hint</strong>: Can you try to change user password,username on profile using CSRF.</p>
 <h2 id="medium">Medium</h2>
 <h3 id="mongodb-injectionnosql-injection">MongoDB Injection(NoSQL Injection)</h3>
@@ -246,20 +246,20 @@
 <h2 id="high">High</h2>
 <h3 id="insecure-direct-object-reference">Insecure Direct Object Reference</h3>
 <p><strong>About</strong>: An insecure direct object reference <a href="https://portswigger.net/web-security/access-control/idor">(IDOR)</a> is an access control vulnerability. Which occurs when unvalidated input is used to reference or access an object by using an unique ID. If by changing ID the attacker can access the details/object which should not be accessible, it&rsquo;s an IDOR.</p>
-<p>Reference to learn more:<a href="https://portswigger.net/web-security/access-control/idor">IDOR</a></p>
+<p>Reference to learn more:<a href="https://portswigger.net/web-security/access-control/idor">Insecure Direct Object Reference</a></p>
 <p><strong>Hint</strong>:  Deleting Comment/Post of any user using BurpSuite (having the UUID).</p>
 <h3 id="server-side-request-forgeryssrf">Server-side Request Forgery(SSRF)</h3>
 <p><strong>About</strong>: In a Server-Side Request Forgery <a href="https://owasp.org/www-community/attacks/Server_Side_Request_Forgery">(SSRF)</a> victim server makes the http request on the behalf of the attacker to some other mentioned server by the attacker.</p>
-<p>Reference to learn more:<a href="https://owasp.org/www-community/attacks/Server_Side_Request_Forgery">SSRF</a></p>
+<p>Reference to learn more:<a href="https://owasp.org/www-community/attacks/Server_Side_Request_Forgery">Server-side Request Forgery</a></p>
 <p><strong>Hint</strong>: It is present in the profile section of the application where an user can upload picture via URL.</p>
 <h3 id="xssstored-xss">XSS(Stored XSS)</h3>
 <p><strong>About</strong>: <a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored xss</a> occurs when the application processes and stores untrusted data (malicious javascript) at the server side and includes that data in later http response in a unsafe way which can triggers the malicious javascript as input to application.</p>
-<p>Reference to learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored XSS</a></p>
+<p>Reference to learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored-Cross Site Scripting</a></p>
 <p><strong>Hint</strong>:  Under the profile section, you can change your website link, it would execute only when visited in an unauthenticated state.</p>
 <h2 id="critical">Critical</h2>
 <h3 id="jwt-authentication">JWT Authentication</h3>
 <p><strong>About</strong>: JWT(JSON Web Token) are used for authentication and A statement from “RFC 7518 (JSON Web Algorithms) states that &ldquo;A key of the same size as the hash output (for instance, 256 bits for &ldquo;HS256&rdquo;) or larger MUST be used with this algorithm. Because shorter can be brute forced this is the one of the weak points that can occur while implementing jwt.</p>
-<p>Reference to learn more:<a href="https://jwt.io/introduction/">JWT</a></p>
+<p>Reference to learn more:<a href="https://jwt.io/introduction/">JSON Web Token</a></p>
 <p><strong>Note</strong>:  For JWT challenge, hardcoded email is <em>‘test@test.com’</em> and the password for it is <em>‘123’</em>. So first make sure that an account exists with the above email id and then try to forge the token.</p>
 <p><strong>Hint</strong>:  The application uses cookie-based authentication but has the support of JWT as well.There is a /management page which has an authentication system which works via JWT API. When logging in to the /management page by providing your credentials, you would see that you are not authorized to log in. Now to become authorized user one has to forge the token of the admin account since its using HMAC so the current secret key is thr3@ds@000t so forge a token with <em>‘test@test.com’</em>.You can replace the token via burp request and response or just change the token under local storage and refresh the page you should have admin access where you can delete other users.</p>
 <p>These are all the challenges present on Threads application which you can solve.
