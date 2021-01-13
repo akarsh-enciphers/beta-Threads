@@ -16,7 +16,8 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### XSS(Self-XSS)
 
-**About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to Reflected XSS however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF. Reference to Learn more:[Self-XSS](https://portswigger.net/web-security/cross-site-scripting/reflected) 
+**About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to Reflected XSS however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF. 
+Reference to Learn more:[Self-XSS](https://portswigger.net/web-security/cross-site-scripting/reflected) 
 
 **Hint**: Self-XSS is present in the profile section of the application. You need to insert a javascript payload to exploit this vulnerability. 
 
