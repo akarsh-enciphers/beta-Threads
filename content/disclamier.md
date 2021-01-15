@@ -6,4 +6,4 @@ description = "A vulnerable web application developed by Enciphers"
 +++
 
 
-Threads aapplication is designed to be an open source lab to help penetration tester perform web application security testing. ENCIPHERS (or anyone in creating Threads application) will not be responsible for any illegal usage of this software and thus hold no liability, whatsoever. USE AT YOUR OWN RISK.
+[Threads application](https://github.com/enciphers/Threads) is designed to be an open source lab to help penetration tester perform web application security testing. ENCIPHERS (or anyone in creating Threads application) will not be responsible for any illegal usage of this software and thus hold no liability, whatsoever. USE AT YOUR OWN RISK.
