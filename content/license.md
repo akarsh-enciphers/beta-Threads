@@ -5,5 +5,7 @@ sidemenu = "true"
 description = "A vulnerable web application developed by Enciphers"
 +++
 
-License will be added in this section
+## GNU General Public License
+
+The Threads application is licensed under the GNU [General Public License](https://mobexler.com/license.htm)
 
