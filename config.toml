@@ -64,6 +64,25 @@ paginate = 10
     weight = 7
     identifier = "Contributors"
     url = "/contributors/"
+  [[menu.main]]
+    name = "License"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 8
+    identifier = "License"
+    url = "/license/"
+  [[menu.main]]
+    name = "Disclamier"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 9
+    identifier = "Disclamier"
+    url = "/disclamier/"
+[[menu.main]]
+    name = "Pending Work"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 10
+    identifier = "Pending"
+    url = "/pending/"
+
 
 [social]
   # Link your social networking accouns to the side menu
