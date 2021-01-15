@@ -242,6 +242,81 @@
 </div>
 <div class="content">
   <p>In this  page  we will tell you about  what&rsquo;s new  coming in the next update of the Threads application.</p>
+<p>There are several features that we are planning to add in the existing web application to give beginners a good platform to get started:</p>
+<h2 id="vulnerabilities-to-be-added-in-threads">Vulnerabilities to be added in Threads</h2>
+<ol>
+<li>
+<p>Information leakage via http (cookie,token)</p>
+</li>
+<li>
+<p>Clickjacking (Low level severity)</p>
+</li>
+<li>
+<p>Session Cookie without HttpOnly and secure flag set</p>
+</li>
+<li>
+<p>Password reset token via referer header (Low level severity)</p>
+</li>
+<li>
+<p>Hardcoded information</p>
+</li>
+<li>
+<p>Session management issues :</p>
+<p>a. Reuse of cookies for authentication (Medium level severity)</p>
+<p>b. Violation of Secure Design Principles (Low level severity)</p>
+</li>
+<li>
+<p>No rate limiting issues on</p>
+<p>a. No rate limiting on forgot password functionality (Low level severity)</p>
+<p>b. No rate limiting on user enumeration (Low level severity)</p>
+<p>c. User enumeration from  forgot password (Low level severity)</p>
+</li>
+<li>
+<p>Password policy issue implementation (Low level severity)</p>
+</li>
+<li>
+<p>HTML Injection (High level severity)</p>
+</li>
+<li>
+<p>Path Traversal (High level severity)</p>
+</li>
+<li>
+<p>LFI via template Injection CVE-2019-3396 (Critical level severity)</p>
+</li>
+<li>
+<p>SQL Injection</p>
+</li>
+<li>
+<p>XXE</p>
+</li>
+<li>
+<p>SSRF</p>
+</li>
+<li>
+<p>RCE</p>
+</li>
+<li>
+<p>CORS</p>
+</li>
+<li>
+<p>OS Command Injection</p>
+</li>
+<li>
+<p>SSL/TLS Issues</p>
+</li>
+<li>
+<p>HTTP Parameter Pollution</p>
+</li>
+<li>
+<p>Host Header Injection</p>
+</li>
+<li>
+<p>Open Redirect</p>
+</li>
+<li>
+<p>Web Cache deception</p>
+</li>
+</ol>
 <h2 id="features-which-will-be-added-in-threads">Features which will be added in Threads</h2>
 <ol>
 <li>

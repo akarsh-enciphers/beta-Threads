@@ -92,9 +92,10 @@ Here is the list of all contributors related to this project
       
       <guid>https://akarsh-enciphers.github.io/beta-Threads/upcoming/</guid>
       <description>In this page we will tell you about what&amp;rsquo;s new coming in the next update of the Threads application.
-Features which will be added in Threads   A user can follow another user.
-  Adding a trending page where we can see what’s trending.
-  Creating a hashtag for a post and if that hashtag is used often by many user then it can be seen on the trending page.</description>
+There are several features that we are planning to add in the existing web application to give beginners a good platform to get started:
+Vulnerabilities to be added in Threads   Information leakage via http (cookie,token)
+  Clickjacking (Low level severity)
+  Session Cookie without HttpOnly and secure flag set</description>
     </item>
     
   </channel>

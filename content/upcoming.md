@@ -7,6 +7,64 @@ description = "Vulnerable web application developed by Enciphers"
 
  In this  page  we will tell you about  what's new  coming in the next update of the Threads application.
 
+ There are several features that we are planning to add in the existing web application to give beginners a good platform to get started:
+
+## Vulnerabilities to be added in Threads
+
+1. Information leakage via http (cookie,token)
+
+2. Clickjacking (Low level severity) 
+
+3. Session Cookie without HttpOnly and secure flag set
+
+4. Password reset token via referer header (Low level severity)
+
+5. Hardcoded information 
+
+6. Session management issues :
+
+   a. Reuse of cookies for authentication (Medium level severity)
+
+   b. Violation of Secure Design Principles (Low level severity)
+
+7. No rate limiting issues on
+
+   a. No rate limiting on forgot password functionality (Low level severity)
+
+   b. No rate limiting on user enumeration (Low level severity)
+
+   c. User enumeration from  forgot password (Low level severity)
+
+8. Password policy issue implementation (Low level severity)
+
+9. HTML Injection (High level severity)
+
+10. Path Traversal (High level severity)
+
+11. LFI via template Injection CVE-2019-3396 (Critical level severity)
+
+12. SQL Injection
+
+13. XXE
+
+14. SSRF
+
+15. RCE
+
+16. CORS
+
+17. OS Command Injection
+
+18. SSL/TLS Issues
+
+19. HTTP Parameter Pollution
+
+20. Host Header Injection
+
+21. Open Redirect
+
+22. Web Cache deception
+
 ## Features which will be added in Threads
 
 1. A user can  follow another user.
