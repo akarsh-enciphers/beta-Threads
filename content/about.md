@@ -2,7 +2,7 @@
 title = "About Threads"
 date = "2020-12-16"
 sidemenu = "true"
-description = "A vulnerable web application developed by Enciphers"
+description = "A Vulnerable Web Lab"
 +++
 
 It’s a NodeJs based application and it has also uses EJS as a frontend development templating engine with bootstrap and a mix of simple HTML, CSS is used to build this web application.
