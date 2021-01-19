@@ -2,7 +2,7 @@
 title = "Upcoming Features"
 date = "2020-12-16"
 sidemenu = "true"
-description = "A Vulnerable Web Lab"
+description = "A Vulnerable Web Application Lab"
 +++
 
  In this  page  we will tell you about  what's new  coming in the next update of the Threads application.

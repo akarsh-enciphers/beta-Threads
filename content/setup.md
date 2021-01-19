@@ -2,7 +2,7 @@
 title = "Setting-up Threads"
 date = "2020-12-16"
 sidemenu = "true"
-description = "A Vulnerable Web Lab"
+description = "A Vulnerable Web Application Lab"
 +++
 
 As we know Threads is a vulnerable lab application which looks the  same like any other social media platform but the main motto is to solve the vulnerabilities present in it. So here is a guide on how to setup Threads application on your local system which is divided into two parts, one contains the information on how to install the  prerequisite before setting up the lab and the other part contains on how to setup lab if you already have the both prerequisite installed in your system.

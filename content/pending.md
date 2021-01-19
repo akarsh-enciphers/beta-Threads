@@ -2,7 +2,7 @@
 title = "Pending Work"
 date = "2020-12-16"
 sidemenu = "true"
-description = "A Vulnerable Web Lab"
+description = "A Vulnerable Web Application Lab"
 +++
 
 Things to complete before launching the website are:

@@ -2,7 +2,7 @@
 title = "Challenges"
 date = "2020-12-16"
 sidemenu = "true"
-description = "A Vulnerable Web Lab"
+description = "A Vulnerable Web Application Lab"
 +++
 
 As we know there are many vulnerabilities present in the Threads web application so to find out and exploit each of  these vulnerabilities are the challenges on Threads application. We have categorized the vulnerabilities into 4 parts (low,medium,high,critical) on the basis of how it is going to affect your system.
