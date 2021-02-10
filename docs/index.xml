@@ -69,8 +69,8 @@ Here is the list of all contributors related to this project
       
       <guid>https://akarsh-enciphers.github.io/beta-Threads/pending/</guid>
       <description>Things to complete before launching the website are:
-  Remove the hardcoded email in the application which is abhinav@enciphers.com to test@test.com and the password for this email will be &amp;ldquo;123&amp;rdquo;.
-  Remove AWS access keys and secret from code.
+  Remove the hardcoded email in the application which is abhinav@enciphers.com to admin@threads.test (done).
+  Remove AWS access keys and secret from code.(done)
   MongoDB Injection not working properly.
   Check if all the names and there twitter links are written right in the contributors section of the website.
   To complete the Upcoming features by adding the List of vulnerabilities which are going to be added next.</description>

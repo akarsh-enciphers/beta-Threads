@@ -7,9 +7,9 @@ description = "A Vulnerable Web Application Lab"
 
 Things to complete before launching the website are:
 
-1. Remove the hardcoded email in the application which is abhinav@enciphers.com to test@test.com and the password for this email will be "123".
+1. Remove the hardcoded email in the application which is abhinav@enciphers.com to admin@threads.test (done).
 
-2. Remove AWS access keys and secret from code.
+2. Remove AWS access keys and secret from code.(done)
 
 3. MongoDB Injection not working properly.
 

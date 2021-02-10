@@ -45,7 +45,7 @@ There are only two prerequisite:
 
 2. `$ wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
 
-3. `$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'`
+3. `$ sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'`  (for Ubuntu OS, the URL inside this command will change according to different OS)
 
 4. `$ sudo apt-get update`
 
@@ -82,13 +82,15 @@ MongoDB server version: 4.4.0
 
 3. Unzip the downloaded zip file for Threads application.
 
-4. Then use these commands to run the application server on your localhost:
+4. Then go inside the main directory of the application and use these commands to run the application server on your localhost:
 
-    a. `$ cd enciphers_web-master`
+    a. `$ cd Threads-main`
 
     b. `$ npm install`
+    
+    c. Enter 'yes' if you want to add dummy users to the application.
 
-    c. `$ npm start`
+    d. `$ npm start`
 
 5. After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.
  

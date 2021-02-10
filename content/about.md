@@ -11,11 +11,16 @@ This web application comes up with various web application vulnerabilities just 
 
 It also consist of  various features like:
 
-* A user can sign up and login into this application.
-* A user can create posts, he/she can also add images to the post he/she creates.
-* A user can like and can comment on other users posts.
-* A user can also chat with other user.
-* A user can tag as many users he wants to tag in his post.
+* A user can sign up and create his account  in this application.Then he can Login to the Threads application via Login page.
+* A user can create posts, he/she can also add images to the post he/she creates. 
+* A user can also tag other users present on this application in his posts.
+* A user can like, comment on other users posts.
+* A user can share and bookmark other users post.
+* A user can also chat with other users in the group chat section.
+* A user can follow another user and also  can get followed by other users.
+* 25 dummy users are added to the application.
+* A user has to enter his Aws credentials in the config.env file to upload a post containing an image.
+
 
 Learn more on [Github](https://github.com/enciphers/Threads).
 
