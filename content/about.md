@@ -18,8 +18,10 @@ It also consist of  various features like:
 * A user can share and bookmark other users post.
 * A user can also chat with other users in the group chat section.
 * A user can follow another user and also  can get followed by other users.
-* 25 dummy users are added to the application.
 * A user has to enter his Aws credentials in the config.env file to upload a post containing an image.
+* You can add 25 dummy users to the application by entering 'yes' while installing the application.
+* A user can delete his account after which all information  like his post,bookmarks,likes,comments,following,followers will get deleted.
+* Profile section has bio field where you can write about yourself.
 
 
 Learn more on [Github](https://github.com/enciphers/Threads).

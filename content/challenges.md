@@ -88,9 +88,9 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to learn more:[JSON Web Token](https://jwt.io/introduction/)
 
-**Note**:  For JWT challenge, hardcoded email is *‘test@test.com’* and the password for it is *‘123’*. So first make sure that an account exists with the above email id and then try to forge the token.
+**Note**:  For JWT challenge, hardcoded email is *‘admin@threadsapp.test’* *. So first make sure that an account exists with the above email id and then try to forge the token.
 
-**Hint**:  The application uses cookie-based authentication but has the support of JWT as well.There is a /management page which has an authentication system which works via JWT API. When logging in to the /management page by providing your credentials, you would see that you are not authorized to log in. Now to become authorized user one has to forge the token of the admin account since its using HMAC so the current secret key is thr3@ds@000t so forge a token with *‘test@test.com’*.You can replace the token via burp request and response or just change the token under local storage and refresh the page you should have admin access where you can delete other users.
+**Hint**:  The application uses cookie-based authentication but has the support of JWT as well.There is a /management page which has an authentication system which works via JWT API. When logging in to the /management page by providing your credentials, you would see that you are not authorized to log in. Now to become authorized user one has to forge the token of the admin account since its using HMAC so the current secret key is thr3@ds@000t so forge a token with *‘admin@threadsapp.test’*.You can replace the token via burp request and response or just change the token under local storage and refresh the page you should have admin access where you can delete other users.
 
 These are all the challenges present on Threads application which you can solve.
 Happy learning,Happy hacking!
