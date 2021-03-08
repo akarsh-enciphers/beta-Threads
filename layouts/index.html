@@ -49,21 +49,23 @@ This is like a social media application so it consist some of the similar featur
 <!--the passphrase for solution page is "Testing@threads#00"  -->
 <h4>Low</h4>
  <ul>
-    <li>Self XSS(2)</li>
+    <li>Self XSS</li>
     <li>CSRF(Cross-site Request Forgery)</li>
     <li>Hidden directories</li>
  </ul>
 
 <h4>Medium</h4>
  <ul>
-    <li>MongoDB Injection</li>
+    <li>No rate limiting</li>
  </ul>
 
 <h4>High</h4>
  <ul>
     <li>IDOR(Insecure Direct Object Reference)</li>
-    <li>Stored XSS</li>
+    <li>Stored XSS(2)</li>
     <li>SSRF(Server-side Request Forgery)</li>
+    <li>Blind SSRF</li>
+    <li>Acoount takeover via IDOR</li>
  </ul>
 
 <h4>Critical</h4>

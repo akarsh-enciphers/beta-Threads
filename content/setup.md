@@ -90,7 +90,9 @@ MongoDB server version: 4.4.0
     
     c. Enter 'yes' if you want to add dummy users to the application.
 
-    d. `$ npm start`
+    d. `$npm run client_install` : To install the dependencies of React App.
+    
+    e.`$ npm start`
 
 5. After using the above commands you will see the message in the terminal like these given below which means that the application server has been connected to the MongoDB database.
  

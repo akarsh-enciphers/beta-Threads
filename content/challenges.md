@@ -16,7 +16,7 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### XSS(Self-XSS)
 
-**Note**: There are 2 Self-XSS present inside the application.
+**Note**: There are  Self-XSS present inside the application.
 
 **About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to Reflected XSS however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF. 
 
@@ -44,11 +44,11 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
 ## Medium 
 
-### MongoDB Injection(NoSQL Injection)
+### No rate Limiting
 
-**About**: [NoSQL](https://www.netsparker.com/blog/web-security/what-is-nosql-injection/) injection vulnerabilities allow attackers to inject code into commands for databases that don’t use SQL queries, such as MongoDB. NoSQL injection attacks can be especially dangerous because code is injected and executed on the server in the language of the web application, potentially allowing arbitrary code execution.
+*About**: [No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting) Application or Server does not keep any restriction on sending the request from one client to server or web-application in a particular time frame which can cause problems to web applications/server. And bad people can perform DDos attacks by creating unusual traffic to server/web applications.
 
- Reference to learn more:[MongoDB Injection](https://www.netsparker.com/blog/web-security/what-is-nosql-injection/)
+ Reference to learn more:[No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting)
 
 **Hint** : It is present in a section where the application retrieve values from the database according to the user input like in fields like search bar.
 
