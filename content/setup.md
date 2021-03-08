@@ -84,7 +84,7 @@ MongoDB server version: 4.4.0
 
 4. Then go inside the main directory of the application and use these commands to run the application server on your localhost:
 
-    a. `$ cd Threads-main`
+    a. `$ cd ThreadsApp`
 
     b. `$ npm install`
     
