@@ -22,16 +22,11 @@ Here is the list of all the challenges according to the severity category to sol
 
 Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting/reflected) 
 
-**Hint for 1st**: Checkout your profile and try inserting  a javascript payload to exploit this vulnerability.
-
-**Hint for 2nd**: You can chat with different users with the chat box but that's not the only thing we can do here. 
-
 
 ### Hidden Directories
 
 **About**: Sometimes Application has hidden directories which are not visible on a public website and these can reveal useful information for potential attacks. Hidden Directories can be found via brute force using a wordlist.
 
-**Hint**: There are many hidden directories present in Threads application one consist of an admin section where an admin user can login. You can find the hidden directories with the help of following tools like DIRSEARCH, FUZZ dir etc.
 
 ### Cross-site Request Forgery(CSRF)
 
@@ -39,7 +34,7 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to Learn more:[Cross-site Request Forgery](https://owasp.org/www-community/attacks/csrf).
 
-**Hint**: Can you try to change user password,username on profile using CSRF.
+
 
 
 ## Medium 
@@ -50,8 +45,6 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to learn more:[No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting)
 
-**Hint** : It is present in a section where the application retrieve values from the database according to the user input like in fields like search bar.
-
 
 ## High
 
@@ -61,7 +54,7 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to learn more:[Insecure Direct Object Reference](https://portswigger.net/web-security/access-control/idor)
 
-**Hint**:  Deleting Comment/Post of any user using BurpSuite (having the UUID).
+**Note**: There are two IDOR present in the application.
 
 ### Server-side Request Forgery(SSRF)
 
@@ -69,7 +62,8 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to learn more:[Server-side Request Forgery](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
 
-**Hint**: It is present in the profile section of the application where an user can upload picture via URL.
+**Note**: There are two SSRF present in the application. one of which is a blind SSRF
+
 
 ### XSS(Stored XSS)
 
@@ -77,8 +71,7 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
  Reference to learn more:[Stored-Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting/stored) 
 
-**Hint**:  Under the profile section, you can change your website link, it would execute only when visited in an unauthenticated state.
-
+**Note**: There are two Stored XSS in the application.
 
 ## Critical   
 
@@ -90,7 +83,6 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
 **Note**:  For JWT challenge, hardcoded email is *‘admin@threadsapp.test’* *. So first make  an account  the given email id and then try to forge the token.
 
-**Hint**:  The application uses cookie-based authentication but has the support of JWT as well.There is a /management page which has an authentication system which works via JWT API. When logging in to the /management page by providing your credentials, you would see that you are not authorized to log in. Now to become authorized user one has to forge the token of the admin account since its using HMAC so the current secret key is thr3@ds@000t so forge a token with *‘admin@threadsapp.test’*.You can replace the token via burp request and response or just change the token under local storage and refresh the page you should have admin access where you can delete other users.
 
 These are all the challenges present on Threads application which you can solve.
 Happy learning,Happy hacking!
