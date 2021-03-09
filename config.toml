@@ -58,30 +58,18 @@ paginate = 10
     weight = 6
     identifier = "new"
     url = "/upcoming/"
-  [[menu.main]]
-    name = "Contributors"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 7
-    identifier = "Contributors"
-    url = "/contributors/"
-  [[menu.main]]
+    [[menu.main]]
     name = "License"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 8
+    weight = 7
     identifier = "License"
     url = "/license/"
   [[menu.main]]
     name = "Disclamier"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 9
+    weight = 8
     identifier = "Disclamier"
     url = "/disclamier/"
-[[menu.main]]
-    name = "Pending Work"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 10
-    identifier = "Pending"
-    url = "/pending/"
 
 
 [social]
