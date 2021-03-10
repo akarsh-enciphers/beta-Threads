@@ -24,8 +24,8 @@ It also consist of  various features like:
 * Profile section has bio field where you can write about yourself.
 
 
-Learn more on [Github](https://github.com/enciphers/Threads).
+Learn more on [Github](https://github.com/enciphers/ThreadsApp).
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/enciphers/Threads) or [ask me on Twitter](https://twitter.com/enciphers_).
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/enciphers/ThreadsApp) or [ask me on Twitter](https://twitter.com/enciphers_).
 
 Thanks for reading!

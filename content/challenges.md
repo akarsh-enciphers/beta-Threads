@@ -41,7 +41,7 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
 ### No rate Limiting
 
-*About**: [No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting) Application or Server does not keep any restriction on sending the request from one client to server or web-application in a particular time frame which can cause problems to web applications/server. And bad people can perform DDos attacks by creating unusual traffic to server/web applications.
+**About**: [No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting) Application or Server does not keep any restriction on sending the request from one client to server or web-application in a particular time frame which can cause problems to web applications/server. And bad people can perform DDos attacks by creating unusual traffic to server/web applications.
 
  Reference to learn more:[No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting)
 
