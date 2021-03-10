@@ -67,19 +67,19 @@ description = "A Vulnerable Web Application Lab"
 
 ## Features which will be added in Threads
 
-1. Adding  a trending page where we can see what’s trending.
+1. Will be adding  a trending page where we can see what’s trending.
 
 2. Creating a hashtag for a post and if that hashtag is used often by many user then it can be seen on the trending page.
  
-3. User getting a notifications if he gets tagged somewhere in some post or comment then the user can see notifications or we can build a notification page and the notification icon should be present on the home page.
+3. User getting a notifications if he gets tagged in a post or comment.
 
-4. Videos get posted too.
+4. Videos getting  posted too.
 
-5. Even gif  file should work or can get posted.
+5. Even .gif file will get uploaded as a post.
 
-6. Search option searching for  people, events, hashtags. (searches for people and post)(check if this is implemented)
+6. Searching option searching for  people, events, hashtags. (searches for people and post)(check if this is implemented)
 
-7. Birthdate can be added  of an user as in profile section and other user can see this section.
+7. Birthdate will be added  of an user as in profile section and other user can see this section.
 
 
 
