@@ -76,7 +76,7 @@ MongoDB server version: 4.4.0
 
 ### Part-2:(Setting up Threads app)
 
-1. First download the [Threads application](https://github.com/enciphers/Threads).
+1. First download the [Threads application](https://github.com/enciphers/ThreadsApp).
 
 2. Open up  your terminal and go to the folder where the zip file got downloaded. 
 
@@ -102,7 +102,7 @@ MongoDB server version: 4.4.0
 > nodemon server.js
 
 [nodemon] 2.0.4 
-[nodemon] to restart at any time, enter `rs`
+[nodemon] to restart at any time, enter `rs` 
 [nodemon] watching path(s): *.*
 [nodemon] watching extensions: js,mjs,json
 [nodemon] starting `node server.js`
