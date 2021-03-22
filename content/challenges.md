@@ -35,6 +35,17 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
  Reference to Learn more:[Cross-site Request Forgery](https://owasp.org/www-community/attacks/csrf).
 
 
+### No Password Policy
+
+
+### Weak Reset Password Implementation
+
+
+### Automatic User Enumeration
+
+### No password required for account deletion
+
+### Simultaneous sessions are being kept active on the same browser 
 
 
 ## Medium 
@@ -44,6 +55,13 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 **About**: [No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting) Application or Server does not keep any restriction on sending the request from one client to server or web-application in a particular time frame which can cause problems to web applications/server. And bad people can perform DDos attacks by creating unusual traffic to server/web applications.
 
  Reference to learn more:[No Rate limiting](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting)
+
+
+### Failure to invalidate the session after password change
+
+### Clickjacking
+
+### Bruteforce of password leading to account takeover
 
 
 ## High
@@ -72,6 +90,9 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
  Reference to learn more:[Stored-Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting/stored) 
 
 **Note**: There are two Stored XSS in the application.
+
+### Chaining of CSRF/IDOR with XSS
+
 
 ## Critical   
 
