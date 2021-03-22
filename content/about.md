@@ -9,7 +9,7 @@ It’s a NodeJs based application and it has also uses EJS as a frontend develop
 
 This web application comes up with various web application vulnerabilities just like some real web applications have and these vulnerabilities are the challenges on this web application which  need to be solved by its users. So this application acts as a vulnerable web lab where users can have hands-on practice on the different vulnerabilities present in it.  
 
-It also consist of  various features like:
+It  consist of  various features like:
 
 * A user can sign up and create his account  in this application.Then he can Login to the Threads application via Login page.
 * A user can create posts, he/she can also add images to the post he/she creates. 
@@ -23,6 +23,19 @@ It also consist of  various features like:
 * A user can delete his account after which all information  like his post,bookmarks,likes,comments,following,followers will get deleted.
 * Profile section has bio field where you can write about yourself.
 
+
+To make this Application a good guide for beginners, we have included the OWASP Top 10 in it so that the beginners can have a good knowledge in web application security:
+
+* Injection (present)
+* Broken Authentication (present)
+* Sensitive Data Exposure (Working on it)
+* XXE (Will come in further Update)
+* Broken Access Control (present)
+* Security Misconfugration (present)
+* Cross-Site Scripting (present)
+* Insecure Deserialization (Will come in further update)
+* Using Component with Known Vulnerabilities (working on it)
+* Insufficient logging and monitoring (present)
 
 Learn more on [Github](https://github.com/enciphers/ThreadsApp).
 
