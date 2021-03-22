@@ -24,7 +24,7 @@ It  consist of  various features like:
 * Profile section has bio field where you can write about yourself.
 
 
-To make this Application a good guide for beginners, we have included the OWASP Top 10 in it so that the beginners can have a good knowledge in web application security:
+To make this Application a good guide for beginners, we have included the OWASP Top 10 in it so that the beginners can geta good knowledge in web application security:
 
 * Injection (present)
 * Broken Authentication (present)
