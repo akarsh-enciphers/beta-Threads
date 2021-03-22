@@ -23,19 +23,31 @@ It  consist of  various features like:
 * A user can delete his account after which all information  like his post,bookmarks,likes,comments,following,followers will get deleted.
 * Profile section has bio field where you can write about yourself.
 
+The idea behind ThreadsApp is to create something which is a go to app, for starting with Web App security. The idle use of this app would be: 
 
-To make this Application a good guide for beginners, we have included the OWASP Top 10 in it so that the beginners can geta good knowledge in web application security:
++ Using the local setup of lab to start with basic web app security learning
++ Using the ThreadsApp in basic web hacking trainings
 
-* Injection (present)
-* Broken Authentication (present)
-* Sensitive Data Exposure (Working on it)
-* XXE (Will come in further Update)
-* Broken Access Control (present)
-* Security Misconfugration (present)
-* Cross-Site Scripting (present)
-* Insecure Deserialization (Will come in further update)
-* Using Component with Known Vulnerabilities (working on it)
-* Insufficient logging and monitoring (present)
+To make the application a good start for beginners, we have decided to include examples of all  the OWASP Top 10 vulnerabilities [**NOTE**: This release of the app, have some of the examples missing from OWASP Top 10. We will add them in future releases.]
+
+1 Injection
+- NoSQL Injection
+2 Broken Authentication (present)
+- IDOR
+3 Sensitive Data Exposure (Working on it)
+-
+4 XXE (Working/Will come in further Update)
+5 Broken Access Control (present)
+- 
+6 Security Misconfiguration 
+-
+7 Cross-Site Scripting 
+-Stored cross Site scripting 
+-Self XSS
+8 Insecure Deserialization (Will come in further update)
+9 Using Component with Known Vulnerabilities (working on it)
+10 Insufficient logging and monitoring (present)
+
 
 Learn more on [Github](https://github.com/enciphers/ThreadsApp).
 
