@@ -251,23 +251,30 @@
 <li>Using the ThreadsApp in basic web hacking trainings</li>
 </ul>
 <p>To make the application a good start for beginners, we have decided to include examples of all  the OWASP Top 10 vulnerabilities [<strong>NOTE</strong>: This release of the app, have some of the examples missing from OWASP Top 10. We will add them in future releases.]</p>
-<p>1 Injection</p>
+<p>1 Injection (present)</p>
 <ul>
-<li>NoSQL Injection
-2 Broken Authentication (present)</li>
-<li>IDOR
-3 Sensitive Data Exposure (Working on it)</li>
-<li></li>
+<li>NoSQL Injection</li>
 </ul>
-<h2 id="5-broken-access-control-present">4 XXE (Working/Will come in further Update)
-5 Broken Access Control (present)</h2>
-<h2 id="6-security-misconfiguration">6 Security Misconfiguration</h2>
+<p>2 Broken Authentication (present)</p>
+<ul>
+<li>JWT</li>
+</ul>
+<h2 id="3-sensitive-data-exposure-working-on-it">3 Sensitive Data Exposure (Working on it)</h2>
+<p>4 XXE (Working/Will come in further Update)</p>
+<p>5 Broken Access Control (present)
+-IDOR
+-SSRF</p>
+<p>6 Security Misconfiguration
+-Present in the form of rate limits on the comment section.
+-No password required for account delete.
+-Clickjacking issue with sensitive action (delete account)</p>
 <p>7 Cross-Site Scripting
 -Stored cross Site scripting
--Self XSS
-8 Insecure Deserialization (Will come in further update)
-9 Using Component with Known Vulnerabilities (working on it)
-10 Insufficient logging and monitoring (present)</p>
+-Self XSS</p>
+<p>8 Insecure Deserialization (Will come in further update)</p>
+<p>9 Using Component with Known Vulnerabilities (working on it)</p>
+<p>10 Insufficient logging and monitoring (present)
+-Present in the form of two or more simultaneous sessions being kept active.</p>
 <p>Learn more on <a href="https://github.com/enciphers/ThreadsApp">Github</a>.</p>
 <p>Have questions or suggestions? Feel free to <a href="https://github.com/enciphers/ThreadsApp">open an issue on GitHub</a> or <a href="https://twitter.com/enciphers_">ask me on Twitter</a>.</p>
 <p>Thanks for reading!</p>

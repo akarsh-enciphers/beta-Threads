@@ -30,23 +30,38 @@ The idea behind ThreadsApp is to create something which is a go to app, for star
 
 To make the application a good start for beginners, we have decided to include examples of all  the OWASP Top 10 vulnerabilities [**NOTE**: This release of the app, have some of the examples missing from OWASP Top 10. We will add them in future releases.]
 
-1 Injection
-- NoSQL Injection
+1 Injection (present)
+  - NoSQL Injection
+
 2 Broken Authentication (present)
-- IDOR
+  - JWT
+
 3 Sensitive Data Exposure (Working on it)
--
+  -
+
 4 XXE (Working/Will come in further Update)
+
 5 Broken Access Control (present)
-- 
+  -IDOR
+  -SSRF
+ 
 6 Security Misconfiguration 
--
+  -Present in the form of rate limits on the comment section.
+  -No password required for account delete.
+  -Clickjacking issue with sensitive action (delete account)
+
 7 Cross-Site Scripting 
--Stored cross Site scripting 
--Self XSS
+  -Stored cross Site scripting 
+  -Self XSS
+
 8 Insecure Deserialization (Will come in further update)
+
 9 Using Component with Known Vulnerabilities (working on it)
+
 10 Insufficient logging and monitoring (present)
+  -Present in the form of two or more simultaneous sessions being kept active.
+
+
 
 
 Learn more on [Github](https://github.com/enciphers/ThreadsApp).
