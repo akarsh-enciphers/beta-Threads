@@ -37,29 +37,28 @@ To make the application a good start for beginners, we have decided to include e
   - JWT
 
 3 Sensitive Data Exposure (Working on it)
-  -
-
+  
 4 XXE (Working/Will come in further Update)
 
 5 Broken Access Control (present)
-  -IDOR
-  -SSRF
+  - IDOR
+  - SSRF
  
 6 Security Misconfiguration 
-  -Present in the form of rate limits on the comment section.
-  -No password required for account delete.
-  -Clickjacking issue with sensitive action (delete account)
+  - Present in the form of rate limits on the comment section.
+  - No password required for account delete.
+  - Clickjacking issue with sensitive action (delete account)
 
 7 Cross-Site Scripting 
-  -Stored cross Site scripting 
-  -Self XSS
+  - Stored cross Site scripting 
+  - Self XSS
 
 8 Insecure Deserialization (Will come in further update)
 
 9 Using Component with Known Vulnerabilities (working on it)
 
 10 Insufficient logging and monitoring (present)
-  -Present in the form of two or more simultaneous sessions being kept active.
+  - Present in the form of two or more simultaneous sessions being kept active.
 
 
 
