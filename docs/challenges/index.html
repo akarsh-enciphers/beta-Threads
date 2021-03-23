@@ -252,18 +252,28 @@
 <li>prohibition of use of company name or an abbreviation.</li>
 <li>prohibition of passwords that match the format of calendar dates, license plate numbers, telephone numbers, or other common numbers.</li>
 </ul>
-<p>When all these policies are followed by the application then it becomes tough for attackers to get password for a user account</p>
+<p>When all these policies are followed by the application then it becomes tough for attackers to get password for a user account.</p>
+<p>Reference to Learn More:<a href="https://en.wikipedia.org/wiki/Password_policy">No password policy</a></p>
 <h3 id="weak-reset-password-implementation">Weak Reset Password Implementation</h3>
+<p><strong>About</strong>: Password reset functionality is performed within the application,so when passwords are reset they are either rendered within the application or emailed to the user. Many of times the application doesn&rsquo;t allow to reset the password as the old password which was already used which comes under good password policy.</p>
+<p>Reference:<a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities">Weak Reset Password implementation</a></p>
 <h3 id="automatic-user-enumeration">Automatic User Enumeration</h3>
+<p><strong>About</strong>: In many application while logging in if we put any one of the credentials wrong  then it shows error message that your password or emailID is invalid or wrong but in some cases it tells you specifically which one of the credential is entered incorrectly because of which an attacker can get to know which credential he has to bruteforce to enter as the other user.</p>
 <h3 id="no-password-required-for-account-deletion">No password required for account deletion</h3>
+<p><strong>About</strong>: In many application it doesn&rsquo;t ask for password before deleting account. If someone leaves his account open in some office,cafe,library then any  intruder can come and try to delete the user&rsquo;s account. Intruder can easily delete the account because the system did not protect it by asking the password to validate that the person deleting the account is the real user.</p>
 <h3 id="simultaneous-sessions-are-being-kept-active-on-the-same-browser">Simultaneous sessions are being kept active on the same browser</h3>
+<p>It&rsquo;s a common request or recommendation that a web application not allow a user to have more than one session active at a time. In other words, after a user logs into an application, he should not be permitted to open a different type of browser (or use another computer) to log in again until his first session has ended.</p>
 <h2 id="medium">Medium</h2>
 <h3 id="no-rate-limiting">No rate Limiting</h3>
 <p><strong>About</strong>: <a href="https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting">No Rate limiting</a> Application or Server does not keep any restriction on sending the request from one client to server or web-application in a particular time frame which can cause problems to web applications/server. And bad people can perform DDos attacks by creating unusual traffic to server/web applications.</p>
 <p>Reference to learn more:<a href="https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html#rate-limiting">No Rate limiting</a></p>
 <h3 id="failure-to-invalidate-the-session-after-password-change">Failure to invalidate the session after password change</h3>
+<p><strong>About</strong>: In many application once a user changes his password then the application directs him to login page and end his session from everywhere wherever his account was open (on different computers, mobiles). This is a good way to secure user information.</p>
 <h3 id="clickjacking">Clickjacking</h3>
+<p><strong>About</strong>: Clickjacking is an attack that tricks a user into clicking a webpage element which is invisible or disguised as another element. This can cause users to unwittingly download malware, visit malicious web pages,provide credentials or sensitive information, transfer money, or purchase products online.</p>
+<p>Reference to Learn more: <a href="https://owasp.org/www-community/attacks/Clickjacking">Clickjacking</a></p>
 <h3 id="bruteforce-of-password-leading-to-account-takeover">Bruteforce of password leading to account takeover</h3>
+<p><strong>About</strong>: If the Password policies are not followed by the application strictly then it gets very easy to get an user password which can be done by bruteforcing with the Help of BurpSuite.</p>
 <h2 id="high">High</h2>
 <h3 id="insecure-direct-object-reference">Insecure Direct Object Reference</h3>
 <p><strong>About</strong>: An insecure direct object reference <a href="https://portswigger.net/web-security/access-control/idor">(IDOR)</a> is an access control vulnerability. Which occurs when unvalidated input is used to reference or access an object by using an unique ID. If by changing ID the attacker can access the details/object which should not be accessible, it&rsquo;s an IDOR.</p>
@@ -278,6 +288,7 @@
 <p>Reference to learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored-Cross Site Scripting</a></p>
 <p><strong>Note</strong>: There are two Stored XSS in the application.</p>
 <h3 id="chaining-of-csrfidor-with-xss">Chaining of CSRF/IDOR with XSS</h3>
+<p><strong>About</strong>: We can input XSS payload while doing CSRF or IDOR attack. We just have to enter the script with the CSRF or IDOR attack which we are performing. It contains a very high risk when they get combine together.</p>
 <h2 id="critical">Critical</h2>
 <h3 id="jwt-authentication">JWT Authentication</h3>
 <p><strong>About</strong>: JWT(JSON Web Token) are used for authentication and A statement from “RFC 7518 (JSON Web Algorithms) states that &ldquo;A key of the same size as the hash output (for instance, 256 bits for &ldquo;HS256&rdquo;) or larger MUST be used with this algorithm. Because shorter can be brute forced this is the one of the weak points that can occur while implementing jwt.</p>

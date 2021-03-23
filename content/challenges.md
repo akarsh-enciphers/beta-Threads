@@ -44,17 +44,28 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
   - prohibition of use of company name or an abbreviation.
   - prohibition of passwords that match the format of calendar dates, license plate numbers, telephone numbers, or other common numbers.
 
-When all these policies are followed by the application then it becomes tough for attackers to get password for a user account 
+When all these policies are followed by the application then it becomes tough for attackers to get password for a user account. 
+
+Reference to Learn More:[No password policy](https://en.wikipedia.org/wiki/Password_policy)
+
 
 ### Weak Reset Password Implementation
 
+**About**: Password reset functionality is performed within the application,so when passwords are reset they are either rendered within the application or emailed to the user. Many of times the application doesn't allow to reset the password as the old password which was already used which comes under good password policy.
+
+Reference:[Weak Reset Password implementation](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities)
 
 ### Automatic User Enumeration
 
+**About**: In many application while logging in if we put any one of the credentials wrong  then it shows error message that your password or emailID is invalid or wrong but in some cases it tells you specifically which one of the credential is entered incorrectly because of which an attacker can get to know which credential he has to bruteforce to enter as the other user.     
+
 ### No password required for account deletion
+
+**About**: In many application it doesn't ask for password before deleting account. If someone leaves his account open in some office,cafe,library then any  intruder can come and try to delete the user's account. Intruder can easily delete the account because the system did not protect it by asking the password to validate that the person deleting the account is the real user.
 
 ### Simultaneous sessions are being kept active on the same browser 
 
+It's a common request or recommendation that a web application not allow a user to have more than one session active at a time. In other words, after a user logs into an application, he should not be permitted to open a different type of browser (or use another computer) to log in again until his first session has ended.
 
 ## Medium 
 
@@ -67,10 +78,17 @@ When all these policies are followed by the application then it becomes tough fo
 
 ### Failure to invalidate the session after password change
 
+**About**: In many application once a user changes his password then the application directs him to login page and end his session from everywhere wherever his account was open (on different computers, mobiles). This is a good way to secure user information. 
+
 ### Clickjacking
+
+**About**: Clickjacking is an attack that tricks a user into clicking a webpage element which is invisible or disguised as another element. This can cause users to unwittingly download malware, visit malicious web pages,provide credentials or sensitive information, transfer money, or purchase products online.
+
+Reference to Learn more: [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking)
 
 ### Bruteforce of password leading to account takeover
 
+**About**: If the Password policies are not followed by the application strictly then it gets very easy to get an user password which can be done by bruteforcing with the Help of BurpSuite.
 
 ## High
 
@@ -101,6 +119,7 @@ When all these policies are followed by the application then it becomes tough fo
 
 ### Chaining of CSRF/IDOR with XSS
 
+**About**: We can input XSS payload while doing CSRF or IDOR attack. We just have to enter the script with the CSRF or IDOR attack which we are performing. It contains a very high risk when they get combine together. 
 
 ## Critical   
 
