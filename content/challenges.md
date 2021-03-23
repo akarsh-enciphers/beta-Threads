@@ -16,8 +16,6 @@ Here is the list of all the challenges according to the severity category to sol
 
 ### XSS(Self-XSS)
 
-**Note**: There are  Self-XSS present inside the application.
-
 **About**: [Self-xss](https://portswigger.net/web-security/cross-site-scripting/reflected) has the behaviour similar to Reflected XSS however it can not be executed with simple ways like Url Crafting, Cross domain request.In this victim themself submit the xss payload (javascript code) in their browser that means you/victim yourself can exploit only. So in order to exploit this vulnerability as an attacker you need to convince the victim to submit/paste the javascript code in the browser (which is not simply not possible). Hence it is considered as a low vulnerability until unless chaining with other vulnerabilities like CSRF. 
 
 Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting/reflected) 
@@ -37,6 +35,16 @@ Reference to Learn more:[Self-Cross Site Scripting](https://portswigger.net/web-
 
 ### No Password Policy
 
+**About**: Sometimes the  application does not require that users should have strong passwords,  which makes it easier for attackers to compromise user accounts. There are many password policy followed by many application like:
+  - use of both upper-case and lower-case letters (case sensitivity).
+  - inclusion of one or more numerical digits.
+  - inclusion of special characters, such as @, #, $.
+  - prohibition of words found in a password blacklist.
+  - prohibition of words found in the user's personal information.
+  - prohibition of use of company name or an abbreviation.
+  - prohibition of passwords that match the format of calendar dates, license plate numbers, telephone numbers, or other common numbers.
+
+When all these policies are followed by the application then it becomes tough for attackers to get password for a user account 
 
 ### Weak Reset Password Implementation
 
