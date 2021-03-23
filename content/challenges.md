@@ -129,8 +129,13 @@ Reference to Learn more: [Clickjacking](https://owasp.org/www-community/attacks/
 
  Reference to learn more:[JSON Web Token](https://jwt.io/introduction/)
 
-**Note**:  For JWT challenge, hardcoded email is *‘admin@threadsapp.test’* *. So first make  an account  the given email id and then try to forge the token.
+**Note**:  For JWT challenge, hardcoded email is ‘admin@threadsapp.co.in’. So first make  an account with  the given email id and then try to forge the token.
 
+### NoSQL Injection
+
+**About**: It is a vulnerability which can be found in databases such as MongoDB which don't run on Sql queries. In this attacker injects a payload where the application asks for user provided data for example, a web page may request user account credentials in a web form, store authentication information in a MongoDB database, and perform credential checks using JavaScript.
+
+Reference to Learn more: [NoSQL Injection](https://owasp.org/www-pdf-archive/GOD16-NOSQL.pdf)
 
 These are all the challenges present on Threads application which you can solve.
 Happy learning,Happy hacking!
