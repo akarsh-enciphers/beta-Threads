@@ -117,9 +117,9 @@ Reference to Learn more: [Clickjacking](https://owasp.org/www-community/attacks/
 
 **Note**: There are two Stored XSS in the application.
 
-### Chaining of CSRF/IDOR with XSS
+### Chaining of IDOR with XSS
 
-**About**: We can input XSS payload while doing CSRF or IDOR attack. We just have to enter the script with the CSRF or IDOR attack which we are performing. It contains a very high risk when they get combine together. 
+**About**: We can input XSS payload while doing an IDOR attack. These both attacks combined can be too dangerous. Usually as we perform IDOR attack this Attack is also performed in the same way all we have to do is input the xss payload instead of some random input in this to change some credentials like (name,mail, password,bio etc) of the other users account via IDOR. 
 
 ## Critical   
 

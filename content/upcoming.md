@@ -13,7 +13,7 @@ description = "A Vulnerable Web Application Lab"
 
 1. Information leakage via http (cookie,token)
 
-2. Clickjacking (Low level severity) 
+2. Insecure Deserialization 
 
 3. Session Cookie without HttpOnly and secure flag set
 
@@ -35,7 +35,7 @@ description = "A Vulnerable Web Application Lab"
 
    c. User enumeration from  forgot password (Low level severity)
 
-8. Password policy issue implementation (Low level severity)
+8. XXE
 
 9. HTML Injection (High level severity)
 
@@ -43,27 +43,21 @@ description = "A Vulnerable Web Application Lab"
 
 11. LFI via template Injection CVE-2019-3396 (Critical level severity)
 
-12. SQL Injection
+12. RCE
 
-13. XXE
+13. CORS
 
-14. SSRF
+14. OS Command Injection
 
-15. RCE
+15. SSL/TLS Issues
 
-16. CORS
+16. HTTP Parameter Pollution
 
-17. OS Command Injection
+17. Host Header Injection
 
-18. SSL/TLS Issues
+18. Open Redirect
 
-19. HTTP Parameter Pollution
-
-20. Host Header Injection
-
-21. Open Redirect
-
-22. Web Cache deception
+19. Web Cache deception
 
 ## Features which will be added in Threads
 

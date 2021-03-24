@@ -287,8 +287,8 @@
 <p><strong>About</strong>: <a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored xss</a> occurs when the application processes and stores untrusted data (malicious javascript) at the server side and includes that data in later http response in a unsafe way which can triggers the malicious javascript as input to application.</p>
 <p>Reference to learn more:<a href="https://portswigger.net/web-security/cross-site-scripting/stored">Stored-Cross Site Scripting</a></p>
 <p><strong>Note</strong>: There are two Stored XSS in the application.</p>
-<h3 id="chaining-of-csrfidor-with-xss">Chaining of CSRF/IDOR with XSS</h3>
-<p><strong>About</strong>: We can input XSS payload while doing CSRF or IDOR attack. We just have to enter the script with the CSRF or IDOR attack which we are performing. It contains a very high risk when they get combine together.</p>
+<h3 id="chaining-of-idor-with-xss">Chaining of IDOR with XSS</h3>
+<p><strong>About</strong>: We can input XSS payload while doing an IDOR attack. These both attacks combined can be too dangerous. Usually as we perform IDOR attack this Attack is also performed in the same way all we have to do is input the xss payload instead of some random input in this to change some credentials like (name,mail, password,bio etc) of the other users account via IDOR.</p>
 <h2 id="critical">Critical</h2>
 <h3 id="jwt-authentication">JWT Authentication</h3>
 <p><strong>About</strong>: JWT(JSON Web Token) are used for authentication and A statement from “RFC 7518 (JSON Web Algorithms) states that &ldquo;A key of the same size as the hash output (for instance, 256 bits for &ldquo;HS256&rdquo;) or larger MUST be used with this algorithm. Because shorter can be brute forced this is the one of the weak points that can occur while implementing jwt.</p>
